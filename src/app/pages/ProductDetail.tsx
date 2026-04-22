@@ -41,7 +41,7 @@ export const ProductDetail = () => {
           <button onClick={() => navigate(-1)} className="text-[#183153]">
             <ChevronLeft className="w-6 h-6" />
           </button>
-          <h1 className="text-[#183153]">Product Details</h1>
+          <h1 className="text-[#183153]">خروج</h1>
         </div>
       </header>
 

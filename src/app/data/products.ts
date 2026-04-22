@@ -17,132 +17,149 @@ export interface Product {
   description: string;
 }
 
+
 export const brands: Brand[] = [
-  // {
-  //   id: 'minijoy',
-  //   name: 'MiniJoy',
-  //   logo: 'https://images.unsplash.com/photo-1541580621-47abd5e3da8b?w=200&h=200&fit=crop',
-  //   cover: 'https://images.unsplash.com/photo-1760287363879-6012adab292c?w=1200&h=400&fit=crop',
-  //   description: 'Premium kids clothing with vibrant designs and comfortable fabrics for everyday adventures.',
-  //   category: 'clothing',
-  // },
-   {
+  {
+    id: 'minijoy',
+    name: 'TRENDS',
+    logo: 'https://i.pinimg.com/736x/41/2c/1e/412c1ed6be110577d885bfb216be1aec.jpg',
+    cover: 'https://i.pinimg.com/736x/f1/bd/b3/f1bdb3c736d6d87a2c31bc48738c617e.jpg',
+    description: 'Premium kids clothing with vibrant designs and comfortable fabrics for everyday adventures.',
+    category: 'clothing',
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/"
+  },
+
+  {
     id: 'playfulthreads',
     name: 'Dr.ROAA',
     logo: 'https://dr-roaa-product.com/wp-content/uploads/2026/01/cropped-dr-roaa-logo-125x87.png',
     cover: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_6213-scaled.jpg',
     description: 'Casual wear that brings fun and comfort together for active kids.',
-    category: '',
+    category: 'clothi',
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/"
   },
+
   {
     id: 'tinysteps',
     name: 'LAIKOU',
     logo: 'https://i.pinimg.com/736x/43/ce/9b/43ce9bc4748a49738144db6957ee1fd8.jpg',
     cover: 'https://i.pinimg.com/736x/f1/a9/a2/f1a9a2ad7fb9968003f3d132bb423a0b.jpg',
     description: 'Gentle and stylish baby shoes designed for first steps and growing feet.',
-    category: 'shoes',
+    category: 'clothing',
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/"
   },
- 
+
   {
     id: 'brightbuds',
     name: 'WOMAN',
     logo: 'https://i.pinimg.com/736x/7e/62/60/7e626021a1847551009259853463781c.jpg',
     cover: 'https://i.pinimg.com/736x/6c/f4/67/6cf467101e59dd3f6607b6288ecad6af.jpg',
     description: 'Colorful accessories to brighten up any outfit with style.',
-    category: '',
+    category: 'accessories',
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/"
   },
+
   {
     id: 'littlewonders',
     name: 'Handbag',
     logo: 'https://i.pinimg.com/736x/9f/c9/fe/9fc9fe91ca8753ca875c5aeb324e435e.jpg',
     cover: 'https://i.pinimg.com/webp/1200x/e7/e0/55/e7e055870af1e7ce5cdc8b1463f6c526.webp',
-    description: 'Imaginative toys that spark creativity and endless hours of play.',
-    category: '',
+    description: 'Imaginative products that spark creativity and endless style.',
+    category: 'accessories',
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/"
   },
+
   {
     id: 'happysprout',
     name: 'GLOW',
     logo: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD7My-4VZBgtU4KGUSiRwHxs8nsyEPJyX_Y8rENTE-CTVKN8pf',
     cover: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD7My-4VZBgtU4KGUSiRwHxs8nsyEPJyX_Y8rENTE-CTVKN8pf',
-    description: 'Educational kits that make learning fun and engaging for curious minds.',
-    category: 'educational',
+    description: 'Beauty and skincare essentials for glowing natural care.',
+    category: 'beauty',
+    instagram: "https://instagram.com/",
+    facebook: "https://facebook.com/"
   },
 ];
 
 export const products: Product[] = [
   // MiniJoy Products (8)
-  // {
-  //   id: 'mj1',
-  //   name: 'Classic Denim Jacket',
-  //   price: 45.99,
-  //   image: 'https://images.unsplash.com/photo-1758782213532-bbb5fd89885e?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Stylish denim jacket perfect for any occasion. Made with soft, durable fabric.',
-  // },
-  // {
-  //   id: 'mj2',
-  //   name: 'Rainbow Stripe Tee',
-  //   price: 22.99,
-  //   image: 'https://images.unsplash.com/photo-1541580621-47abd5e3da8b?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Bright and cheerful striped t-shirt for everyday wear.',
-  // },
-  // {
-  //   id: 'mj3',
-  //   name: 'Smart Casual Vest Set',
-  //   price: 38.99,
-  //   image: 'https://images.unsplash.com/photo-1725147874926-dfebe6d996ef?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Elegant vest and tie combination for special occasions.',
-  // },
-  // {
-  //   id: 'mj4',
-  //   name: 'Formal Vest Ensemble',
-  //   price: 42.99,
-  //   image: 'https://images.unsplash.com/photo-1725147874578-fc76e0d865e1?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Premium formal wear for your little gentleman.',
-  // },
-  // {
-  //   id: 'mj5',
-  //   name: 'Winter Puffer Jacket',
-  //   price: 55.99,
-  //   image: 'https://images.unsplash.com/photo-1543854704-2b1b011701e6?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Warm and cozy jacket for cold winter days.',
-  // },
-  // {
-  //   id: 'mj6',
-  //   name: 'Purple Street Style Dress',
-  //   price: 39.99,
-  //   image: 'https://images.unsplash.com/photo-1541580104-e98c7a5dd683?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Trendy dress with a modern street style look.',
-  // },
-  // {
-  //   id: 'mj7',
-  //   name: 'Gray Summer Dress',
-  //   price: 34.99,
-  //   image: 'https://images.unsplash.com/photo-1556133168-a6cb2412e0c7?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Light and breezy dress perfect for summer days.',
-  // },
-  // {
-  //   id: 'mj8',
-  //   name: 'Elegant Party Dress',
-  //   price: 48.99,
-  //   image: 'https://images.unsplash.com/photo-1577877777751-3f1ec20a0715?w=500&h=500&fit=crop',
-  //   brandId: 'minijoy',
-  //   category: 'clothing',
-  //   description: 'Beautiful dress for special occasions and parties.',
-  // },
+  {
+    id: 'mj1',
+    name: 'Classic Denim ',
+    price: 45.99,
+    image: 'https://i.pinimg.com/736x/fd/a0/91/fda091f1a1cfa5029dc3272674cdd585.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Stylish denim jacket perfect for any occasion. Made with soft, durable fabric.',
+  },
+  {
+    id: 'mj2',
+    name: 'Rainbow Stripe ',
+    price: 22.99,
+    image: 'https://i.pinimg.com/1200x/f4/aa/3c/f4aa3c71c1c1021f8d160f55c18cb730.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Bright and cheerful striped t-shirt for everyday wear.',
+  },
+  {
+    id: 'mj3',
+    name: 'Smart Casual Vest ',
+    price: 38.99,
+    image: 'https://i.pinimg.com/736x/0b/84/ff/0b84ffde2d9db72ee41f2b631a69834f.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Elegant vest and tie combination for special occasions.',
+  },
+  {
+    id: 'mj4',
+    name: 'Formal Vest ',
+    price: 42.99,
+    image: 'https://i.pinimg.com/736x/5d/57/33/5d57339397c2c30912b93fd23be19a92.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Premium formal wear for your little gentleman.',
+  },
+  {
+    id: 'mj5',
+    name: 'Winter Puffer ',
+    price: 55.99,
+    image: 'https://i.pinimg.com/736x/32/92/c6/3292c6e4ff49e1b535f2e292588c9d28.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Warm and cozy jacket for cold winter days.',
+  },
+  {
+    id: 'mj6',
+    name: 'Purple  Style Dress',
+    price: 39.99,
+    image: 'https://i.pinimg.com/736x/8e/cb/39/8ecb39d884b33da4f700d70190ac97b8.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Trendy dress with a modern street style look.',
+  },
+  {
+    id: 'mj7',
+    name: 'Gray Summer ',
+    price: 34.99,
+    image: 'https://i.pinimg.com/736x/26/15/f6/2615f67e9aa15f3a5dbfe7f05b046a20.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Light and breezy dress perfect for summer days.',
+  },
+  {
+    id: 'mj8',
+    name: 'Elegant Party Dress',
+    price: 48.99,
+    image: 'https://i.pinimg.com/736x/37/b2/3e/37b23e16ce8cc08094a5d9500ec0b203.jpg',
+    brandId: 'minijoy',
+    category: 'clothing',
+    description: 'Beautiful dress for special occasions and parties.',
+  },
 
   // TinySteps Products (8)
   {
