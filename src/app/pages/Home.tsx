@@ -76,7 +76,7 @@ export const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const trendingProducts = products.slice(0, 8);
+  const trendingProducts = products.slice(0, 8)
   const featuredBrands = brands.slice(0, 3);
 
   return (
@@ -84,18 +84,18 @@ export const Home = () => {
 
       {/* Header */}
       <header className="bg-[#2a2e30] shadow-sm sticky top-0 z-40">
-        <div className="px-4 py-4 flex justify-center">
+        <div className="px-4 py-3 flex justify-center">
           <img
             src="https://khartoumlights.com/wp-content/uploads/2025/04/connected-store-2-1.png"
             alt="Khartoum Lights"
-            className="h-7 object-contain"
+            className="h-4 object-contain"
           />
         </div>
       </header>
 
       {/* Banner */}
       <section className="relative bg-white ">
-        <div className="relative h-[700px] overflow-hidden">
+        <div className="relative h-[670px] overflow-hidden">
           {bannerImages.map((image, index) => (
             <div
               key={index}
@@ -140,26 +140,31 @@ export const Home = () => {
         {/* ======================= */}
       {/* 🔥 CATEGORIES SECTION */}
       {/* ======================= */}
+     
       <section className="px-4 mb-8">
-        <h2 className="text-[#183153] mb-4">الأقسام</h2>
 
-        <div className="grid grid-cols-2 gap-4">
+     <div className="flex justify-center mb-4">
+  <h2 className="text-[#183153]">الأقسام</h2>
+</div>
 
-          {/* أول 2 */}
-          {categories.slice(0, 2).map((cat) => (
-            <CategoryCard key={cat.key} cat={cat} />
-          ))}
+  <div className="grid grid-cols-2 gap-2">
 
-          {/* الأوسط */}
-          <CategoryCard cat={categories[2]} featured />
+    {/* أول 2 */}
+    {categories.slice(0, 2).map((cat) => (
+      <CategoryCard key={cat.key} cat={cat} />
+    ))}
 
-          {/* آخر 2 */}
-          {categories.slice(3).map((cat) => (
-            <CategoryCard key={cat.key} cat={cat} />
-          ))}
+    {/* الأوسط */}
+    <CategoryCard cat={categories[2]} featured />
 
-        </div>
-      </section>
+    {/* آخر 2 */}
+    {categories.slice(3).map((cat) => (
+      <CategoryCard key={cat.key} cat={cat} />
+    ))}
+
+  </div>
+
+</section>
       {/* Brands */}
       {/* Trending */}
       <section className="px-4 mb-8">
