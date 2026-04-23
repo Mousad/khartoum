@@ -24,7 +24,7 @@ export const brands: Brand[] = [
     name: 'TRENDS',
     logo: 'https://i.pinimg.com/736x/41/2c/1e/412c1ed6be110577d885bfb216be1aec.jpg',
     cover: 'https://i.pinimg.com/736x/f1/bd/b3/f1bdb3c736d6d87a2c31bc48738c617e.jpg',
-    description: 'Premium kids clothing with vibrant designs and comfortable fabrics for everyday adventures.',
+    description: 'Premium kids clothing with vibrant designs and comfortable fabrics.',
     category: 'clothing',
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/"
@@ -35,8 +35,8 @@ export const brands: Brand[] = [
     name: 'Dr.ROAA',
     logo: 'https://dr-roaa-product.com/wp-content/uploads/2026/01/cropped-dr-roaa-logo-125x87.png',
     cover: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_6213-scaled.jpg',
-    description: 'Casual wear that brings fun and comfort together for active kids.',
-    category: 'clothi',
+    description: 'Beauty and lifestyle products with modern style.',
+    category: 'skincare',
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/"
   },
@@ -46,8 +46,8 @@ export const brands: Brand[] = [
     name: 'LAIKOU',
     logo: 'https://i.pinimg.com/736x/43/ce/9b/43ce9bc4748a49738144db6957ee1fd8.jpg',
     cover: 'https://i.pinimg.com/736x/f1/a9/a2/f1a9a2ad7fb9968003f3d132bb423a0b.jpg',
-    description: 'Gentle and stylish baby shoes designed for first steps and growing feet.',
-    category: 'clothing',
+    description: 'Gentle and stylish baby shoes for first steps.',
+    category: 'shoes',
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/"
   },
@@ -57,7 +57,7 @@ export const brands: Brand[] = [
     name: 'WOMAN',
     logo: 'https://i.pinimg.com/736x/7e/62/60/7e626021a1847551009259853463781c.jpg',
     cover: 'https://i.pinimg.com/736x/6c/f4/67/6cf467101e59dd3f6607b6288ecad6af.jpg',
-    description: 'Colorful accessories to brighten up any outfit with style.',
+    description: 'Fashion accessories to brighten your style.',
     category: 'accessories',
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/"
@@ -68,8 +68,8 @@ export const brands: Brand[] = [
     name: 'Handbag',
     logo: 'https://i.pinimg.com/736x/9f/c9/fe/9fc9fe91ca8753ca875c5aeb324e435e.jpg',
     cover: 'https://i.pinimg.com/webp/1200x/e7/e0/55/e7e055870af1e7ce5cdc8b1463f6c526.webp',
-    description: 'Imaginative products that spark creativity and endless style.',
-    category: 'accessories',
+    description: 'Creative makeup and fashion-inspired products.',
+    category: 'makeup',
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/"
   },
@@ -80,7 +80,7 @@ export const brands: Brand[] = [
     logo: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD7My-4VZBgtU4KGUSiRwHxs8nsyEPJyX_Y8rENTE-CTVKN8pf',
     cover: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD7My-4VZBgtU4KGUSiRwHxs8nsyEPJyX_Y8rENTE-CTVKN8pf',
     description: 'Beauty and skincare essentials for glowing natural care.',
-    category: 'beauty',
+    category: 'perfume',
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/"
   },
@@ -242,7 +242,7 @@ export const products: Product[] = [
     price: 29.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_6211-scaled.jpg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Vibrant casual wear for everyday adventures.',
   },
   {
@@ -251,7 +251,7 @@ export const products: Product[] = [
     price: 36.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2026/02/IMG_9991-scaled.jpeg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Versatile vest styles for various occasions.',
   },
   {
@@ -260,7 +260,7 @@ export const products: Product[] = [
     price: 32.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2026/02/IMG_3142-scaled.jpeg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Charming floral dress for spring days.',
   },
   {
@@ -269,7 +269,7 @@ export const products: Product[] = [
     price: 41.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_5988-1-scaled.jpg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Curated collection of trendy kids wear.',
   },
   {
@@ -278,7 +278,7 @@ export const products: Product[] = [
     price: 37.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_6194-1-1229x1536.jpg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Mix and match colorful pieces for creative styling.',
   },
   {
@@ -287,7 +287,7 @@ export const products: Product[] = [
     price: 260.00,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_6002-scaled.jpg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Complete baby wardrobe essentials.',
   },
   {
@@ -296,7 +296,7 @@ export const products: Product[] = [
     price: 39.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/b356fd50-d0ba-4b2f-8b5e-9f39e0419654.jpeg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Coordinated outfit set for fashion-conscious kids.',
   },
   {
@@ -305,7 +305,7 @@ export const products: Product[] = [
     price: 33.99,
     image: 'https://dr-roaa-product.com/wp-content/uploads/2025/11/IMG_6213-scaled.jpg',
     brandId: 'playfulthreads',
-    category: 'clothing',
+    category: 'skincare',
     description: 'Light and comfortable summer casuals.',
   },
 
@@ -390,7 +390,7 @@ export const products: Product[] = [
     price: 22.99,
     image: 'https://i.pinimg.com/736x/df/ba/9a/dfba9ae77c1a4ed80df7daf1330481ff.jpg',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Bright and bouncy balls for active play.',
   },
   {
@@ -399,7 +399,7 @@ export const products: Product[] = [
     price: 35.99,
     image: 'https://i.pinimg.com/736x/78/1e/f7/781ef7df243de322b4a28b5cf1bcbd77.jpg',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Colorful hanging toys for decoration and play.',
   },
   {
@@ -408,7 +408,7 @@ export const products: Product[] = [
     price: 26.99,
     image: 'https://i.pinimg.com/736x/f3/72/34/f372347f86f522816f08b0a1d9ae2ef0.jpg',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Soft and cuddly bunny companion.',
   },
   {
@@ -417,7 +417,7 @@ export const products: Product[] = [
     price: 28.99,
     image: 'https://i.pinimg.com/webp/1200x/9a/4e/b8/9a4eb8dd7fe67fec85aef48a53a67118.webp',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Adorable blue bear for bedtime cuddles.',
   },
   {
@@ -426,7 +426,7 @@ export const products: Product[] = [
     price: 44.99,
     image: 'https://img.fantaskycdn.com/0fab75a8e9851148f4045428a8cd7a52_1024x.jpeg',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Creative building blocks for imaginative play.',
   },
   {
@@ -435,7 +435,7 @@ export const products: Product[] = [
     price: 32.99,
     image: 'https://img.fantaskycdn.com/4ac3eefedf771640d3985cc1faf9324b_1024x.png',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Sturdy toy truck for construction play.',
   },
   {
@@ -444,7 +444,7 @@ export const products: Product[] = [
     price: 29.99,
     image: 'https://i.pinimg.com/736x/cf/9a/d6/cf9ad630c2d1c6bac890086eb1e05765.jpg',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Sweet pink bear with cozy scarf.',
   },
   {
@@ -453,7 +453,7 @@ export const products: Product[] = [
     price: 38.99,
     image: 'https://i.pinimg.com/1200x/db/f8/3c/dbf83cb0df01edc11c493d7fa6a4ca52.jpg',
     brandId: 'littlewonders',
-    category: 'toys',
+    category: 'makeup',
     description: 'Variety pack of colorful toys.',
   },
 
@@ -464,7 +464,7 @@ export const products: Product[] = [
     price: 41.99,
     image: 'https://i.pinimg.com/1200x/a5/8b/2c/a58b2ca1c804a2c110de579771051c31.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Educational building blocks for developing motor skills.',
   },
   {
@@ -473,7 +473,7 @@ export const products: Product[] = [
     price: 45.99,
     image: 'https://i.pinimg.com/736x/45/4f/ca/454fca30058b9be6a9829d6ee3d32a17.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Comprehensive learning toy collection.',
   },
   {
@@ -482,7 +482,7 @@ export const products: Product[] = [
     price: 39.99,
     image: 'https://i.pinimg.com/736x/31/a3/c9/31a3c92eef26194e8fd78a1e0530235d.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Interactive learning through play.',
   },
   {
@@ -491,7 +491,7 @@ export const products: Product[] = [
     price: 48.99,
     image: 'https://i.pinimg.com/736x/dd/39/af/dd39afbc0804c14d6f6eafd825c5c817.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Science and engineering learning kit.',
   },
   {
@@ -500,7 +500,7 @@ export const products: Product[] = [
     price: 42.99,
     image: 'https://i.pinimg.com/1200x/9e/90/91/9e90917edadab19a01a771eb5ed1c042.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Build and learn with this creative set.',
   },
   {
@@ -509,7 +509,7 @@ export const products: Product[] = [
     price: 34.99,
     image: 'https://i.pinimg.com/736x/be/f2/f0/bef2f01bc43b94bc9cc34d766fef9df0.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Soft toy that teaches colors and shapes.',
   },
   {
@@ -518,7 +518,7 @@ export const products: Product[] = [
     price: 37.99,
     image: 'https://i.pinimg.com/736x/92/65/cd/9265cd8ff168da9594dff6f986813a46.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Multiple activities for cognitive development.',
   },
   {
@@ -527,7 +527,7 @@ export const products: Product[] = [
     price: 46.99,
     image: 'https://i.pinimg.com/736x/a5/e6/3e/a5e63eef9602a10dc8737f7cc8aee3ad.jpg',
     brandId: 'happysprout',
-    category: 'educational',
+    category: 'perfume',
     description: 'Explore and discover with hands-on learning.',
   },
 ];

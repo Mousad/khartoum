@@ -7,6 +7,7 @@ import { Shop } from "./pages/Shop";
 import { ProductDetail } from "./pages/ProductDetail";
 import { Cart } from "./pages/Cart";
 import { Profile } from "./pages/Profile";
+import { Checkout } from "./pages/Checkout"; // 👈 جديد
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,9 @@ export const router = createBrowserRouter([
       { path: "product/:productId", Component: ProductDetail },
       { path: "cart", Component: Cart },
       { path: "profile", Component: Profile },
+
+      // 🆕 Checkout Route
+      { path: "checkout", Component: Checkout },
     ],
   },
 ]);

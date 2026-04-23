@@ -1,85 +1,124 @@
-import { User, Settings, Heart, Package, LogOut } from 'lucide-react';
+import { useState } from "react";
+import { User, Store, Mail } from "lucide-react";
+
+type Step = "choose" | "login" | "auth";
 
 export const Profile = () => {
+  const [step, setStep] = useState<Step>("choose");
+  const [mode, setMode] = useState<"shop" | "store" | null>(null);
+
   return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="px-4 py-4">
-          <h1 className="text-[#5433eb] text-center">Profile</h1>
-        </div>
-      </header>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
 
-      {/* Profile Section */}
-      <div className="bg-white mt-6 mx-4 rounded-2xl p-6 shadow-sm">
-        <div className="flex items-center gap-4">
-          <div className="w-20 h-20 bg-[#5433eb] rounded-full flex items-center justify-center text-white text-2xl">
-            KL
+      <div className="w-full max-w-md bg-white rounded-2xl shadow p-6">
+
+        {/* ================= STEP 1 ================= */}
+        {step === "choose" && (
+          <div className="text-center space-y-6">
+
+            <h1 className="text-xl font-bold">
+              مرحباً 👋 اختر ماذا تريد
+            </h1>
+
+            <button
+              onClick={() => {
+                setMode("shop");
+                setStep("login");
+              }}
+              className="w-full bg-[#5433eb] text-white py-3 rounded-xl flex items-center justify-center gap-2"
+            >
+              <User size={18} />
+              عايز أتسوق
+            </button>
+
+            <button
+              onClick={() => {
+                setMode("store");
+                setStep("login");
+              }}
+              className="w-full bg-black text-white py-3 rounded-xl flex items-center justify-center gap-2"
+            >
+              <Store size={18} />
+              عايز أفتح متجر
+            </button>
+
           </div>
-          <div>
-            <h2 className="text-[#183153] mb-1">Khartoum User</h2>
-            <p className="text-[#183153] text-sm opacity-60">user@khartoumlights.com</p>
+        )}
+
+        {/* ================= STEP 2 LOGIN ================= */}
+        {step === "login" && (
+          <div className="space-y-4 text-center">
+
+            <h2 className="font-bold">
+              تسجيل الدخول
+            </h2>
+
+            <input
+              type="email"
+              placeholder="البريد الإلكتروني"
+              className="w-full border p-3 rounded-xl"
+            />
+
+            <button className="w-full bg-[#5433eb] text-white py-3 rounded-xl flex items-center justify-center gap-2">
+              <Mail size={18} />
+              دخول بالإيميل
+            </button>
+
+            {/* Google */}
+            <button className="w-full border py-3 rounded-xl">
+              تسجيل بجوجل
+            </button>
+
+            {/* Facebook */}
+            <button className="w-full bg-blue-600 text-white py-3 rounded-xl">
+              تسجيل بفيسبوك
+            </button>
+
+            <button
+              onClick={() => setStep("auth")}
+              className="text-sm text-gray-500"
+            >
+              متابعة (تجريبي)
+            </button>
+
           </div>
-        </div>
+        )}
+
+        {/* ================= STEP 3 AUTH RESULT ================= */}
+        {step === "auth" && (
+          <div className="text-center space-y-4">
+
+            {mode === "shop" && (
+              <>
+                <h2 className="font-bold text-green-600">
+                  🎉 مرحباً بك في المتجر
+                </h2>
+                <p>يمكنك الآن التسوق</p>
+
+                <button className="w-full bg-[#5433eb] text-white py-3 rounded-xl">
+                  دخول المتجر
+                </button>
+              </>
+            )}
+
+            {mode === "store" && (
+              <>
+                <h2 className="font-bold text-green-600">
+                  🏪 جاهز لإنشاء متجرك
+                </h2>
+                <p>ابدأ رحلة البيع الآن</p>
+
+                <button className="w-full bg-black text-white py-3 rounded-xl">
+                  بدء إنشاء المتجر
+                </button>
+              </>
+            )}
+
+          </div>
+        )}
+
       </div>
 
-      {/* Menu Options */}
-      <div className="mt-6 mx-4 space-y-3">
-        <button className="w-full bg-white rounded-2xl p-4 shadow-sm flex items-center gap-4 hover:shadow-md transition-shadow">
-          <div className="w-10 h-10 bg-[#f2f9f5] rounded-full flex items-center justify-center">
-            <Package className="w-5 h-5 text-[#5433eb]" />
-          </div>
-          <div className="flex-1 text-left">
-            <h3 className="text-[#183153]">My Orders</h3>
-            <p className="text-[#183153] text-sm opacity-60">View order history</p>
-          </div>
-        </button>
-
-        <button className="w-full bg-white rounded-2xl p-4 shadow-sm flex items-center gap-4 hover:shadow-md transition-shadow">
-          <div className="w-10 h-10 bg-[#f2f9f5] rounded-full flex items-center justify-center">
-            <Heart className="w-5 h-5 text-[#5433eb]" />
-          </div>
-          <div className="flex-1 text-left">
-            <h3 className="text-[#183153]">Wishlist</h3>
-            <p className="text-[#183153] text-sm opacity-60">Your saved items</p>
-          </div>
-        </button>
-
-        <button className="w-full bg-white rounded-2xl p-4 shadow-sm flex items-center gap-4 hover:shadow-md transition-shadow">
-          <div className="w-10 h-10 bg-[#f2f9f5] rounded-full flex items-center justify-center">
-            <User className="w-5 h-5 text-[#5433eb]" />
-          </div>
-          <div className="flex-1 text-left">
-            <h3 className="text-[#183153]">Account Details</h3>
-            <p className="text-[#183153] text-sm opacity-60">Manage your information</p>
-          </div>
-        </button>
-
-        <button className="w-full bg-white rounded-2xl p-4 shadow-sm flex items-center gap-4 hover:shadow-md transition-shadow">
-          <div className="w-10 h-10 bg-[#f2f9f5] rounded-full flex items-center justify-center">
-            <Settings className="w-5 h-5 text-[#5433eb]" />
-          </div>
-          <div className="flex-1 text-left">
-            <h3 className="text-[#183153]">Settings</h3>
-            <p className="text-[#183153] text-sm opacity-60">Preferences and privacy</p>
-          </div>
-        </button>
-
-        <button className="w-full bg-white rounded-2xl p-4 shadow-sm flex items-center gap-4 hover:shadow-md transition-shadow">
-          <div className="w-10 h-10 bg-red-50 rounded-full flex items-center justify-center">
-            <LogOut className="w-5 h-5 text-red-500" />
-          </div>
-          <div className="flex-1 text-left">
-            <h3 className="text-red-500">Log Out</h3>
-            <p className="text-[#183153] text-sm opacity-60">Sign out of your account</p>
-          </div>
-        </button>
-      </div>
-
-      {/* App Info */}
-      <div className="mt-8 text-center px-4 pb-8">
-        <p className="text-[#183153] opacity-40 text-sm">Khartoum Lights v1.0.0</p>
-      </div>
     </div>
   );
 };

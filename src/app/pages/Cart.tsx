@@ -2,7 +2,6 @@ import { Link } from 'react-router';
 import { Minus, Plus, Trash2, ShoppingBag } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { getBrandById } from '../data/products';
-
 export const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice, clearCart } = useCart();
 
@@ -135,9 +134,12 @@ export const Cart = () => {
           </div>
 
           {/* Checkout Button */}
-          <button className="w-full py-4 bg-[#5433eb] text-white rounded-xl hover:bg-[#4329c9] transition-colors">
-            Proceed to Checkout
-          </button>
+          <Link
+  to="/checkout"
+  className="block text-center w-full py-4 bg-[#5433eb] text-white rounded-xl hover:bg-[#4329c9] transition-colors"
+>
+    Checkout
+</Link>
         </div>
       </div>
     </div>
